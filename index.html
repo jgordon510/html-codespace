@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>All the GOATS</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    body {
+      background: darkolivegreen;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        justify-items: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .grid-container > div {
+        padding: 30px;
+        border: dashed;
+        font-size: 80px;
+    }
+
+  </style>
+</head>
+
+<body>
+    <h1>All the GOATS</h1>
+    <h2>
+        JavaScript
+    </h2>
+    <div class="goat-patch grid-container"></div>
+    <h2> HTML </h2>
+    <div class="grid-container">
+        <div>🐐</div>
+        <div>🐐</div>
+        <div>🐐</div>
+        <div>🐐</div>
+        <div>🐐</div>
+        <div>🐐</div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
