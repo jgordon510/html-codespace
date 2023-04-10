@@ -5,7 +5,7 @@
   <title>A webpage</title>
   <link rel="stylesheet" href="./style.css">
   <style>
-    .container{
+    .footer{
       background: black;
       color: white;
       padding: 2em;
@@ -14,15 +14,17 @@
 </head>
 
 <body>
-  <h1>Your time is:</h1>
+  <h1>Hello World</h1>
 
-  <div class="container">
-      <span id="hours"></span><span>:</span><span id="minutes"></span>
+  <div class="footer">
+      Accessed at <span id="hours"></span><span>:</span><span id="minutes"></span>
   </div>
   <script>
-      const date = new Date(); // current date
-      document.getElementById("hours").textContent = date.getHours();
-      document.getElementById("minutes").textContent = date.getMinutes();
+      const date = new Date();     // current date
+      let hours = date.getHours();
+      let minutes = date.getMinutes().toString().padStart(2, "0")
+      document.getElementById("hours").textContent = hours;
+      document.getElementById("minutes").textContent = minutes;
   </script>
   <script src="./index.js"></script>
 </body>
