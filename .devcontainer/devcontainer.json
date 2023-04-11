@@ -12,8 +12,7 @@
   "customizations": {
     "codespaces": {
       "openFiles": [
-        "src/index.js",
-        "src/routes/home/index.js"
+        "index.html"
       ]
     }
   },
