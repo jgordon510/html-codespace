@@ -2,6 +2,6 @@
 import kaboom from "https://unpkg.com/kaboom@3000.0.1/dist/kaboom.mjs";
 
 kaboom({
-  background: [141, 183, 255],
+  background: [0, 0, 0],
 })
 
